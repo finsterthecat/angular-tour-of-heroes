@@ -11,7 +11,7 @@ import { HeroService } from './hero.service';
 })
 export class HeroDetailComponent implements OnInit, OnDestroy {
   @Input() hero: Hero;
-  @Output close = new EventEmitter();
+  @Output() close = new EventEmitter();
   sub: any;
   error: any;
   navigated = false; //true if navigated here
